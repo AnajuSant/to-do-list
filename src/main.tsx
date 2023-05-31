@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./global.css";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./components/NotFound/index.tsx";
 import { Home } from "./components/Home/index.tsx";

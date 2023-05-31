@@ -1,21 +1,18 @@
-import { Content } from "./components/Content"
-import { Header } from "./components/Header"
-import { ToDoContextProvider } from "./contexts/ToDo"
-import { ToastProvider } from "./contexts/Toast/inde"
-
+import { Content } from "./components/Content";
+import { Header } from "./components/Header";
+import { Home } from "./components/Home/index";
+import { ToDoContextProvider } from "./contexts/ToDo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <>
       <Header />
-      <ToastProvider>
-        <ToDoContextProvider>
-          <Content />
-        </ToDoContextProvider>
-      </ToastProvider>
+      <ToDoContextProvider>
+        <Content />
+      </ToDoContextProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
